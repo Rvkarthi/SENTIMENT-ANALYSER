@@ -65,7 +65,7 @@
             }
 
             try {
-                let response = await fetch("/analyze", {
+                let response = await fetch("https://sentiment-analyser-8iyf.onrender.com/analyze", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ text })
