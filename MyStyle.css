@@ -14,8 +14,9 @@
 body{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient( to top, rgb(0, 0, 0),var(--primary-color));
-    /* background-image: url("https://img.freepik.com/premium-photo/full-frame-shot-wall_1048944-1045083.jpg?w=360"); */
+    /* background-color: #ffffff; */
+    /* background-image: linear-gradient( to top, rgb(0, 0, 0),var(--primary-color)); */
+    background-image: url("https://i.pinimg.com/736x/eb/75/7a/eb757a8e3e44f2486143dcf7ece59e61.jpg");
     transform: rotateY('90');
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,9 +24,9 @@ body{
 }
 
 .title{
-    color: #ffffff;
+    color: #4cad44;
     text-decoration: underline;
-    -webkit-text-stroke: rgb(61, 61, 61) 2px;
+    /* -webkit-text-stroke: rgb(61, 61, 61) 2px; */
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -35,7 +36,7 @@ body{
 
 .para{
     font-family: "roboto", serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(55, 255, 0);
     font-optical-sizing: auto;
     font-weight: 500;
@@ -96,11 +97,11 @@ body{
 /* ELEMENTS */
 
     .card-transparent{
-        max-width: 50%;   /* adjust this*/    
+        
         border-top: 2px solid #ffffff75;
         border-left: 2px solid #ffffff75;
         box-shadow: 5px 5px 12px #00000035;
-        background-color: #0000003e;
+        background-color: #fcf8f2;
         border-radius: 15px;
         overflow: hidden;
         padding: 1.5rem;
@@ -119,8 +120,8 @@ body{
       }
 
     .btn{
-        background-color: rgb(122, 192, 122) !important;
-        color: black !important;
+        background-color: #4cad44 !important;
+        color: rgb(237, 237, 237) !important;
         filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.479));
         border-radius: 25px;
         border: none;
@@ -129,7 +130,7 @@ body{
         font-family: "Roboto", serif;
         font-optical-sizing: auto;
         font-weight: 800;
-        font-size: 2rem;
+        font-size: 1rem;
         font-style: normal;
         letter-spacing: 2px;
         font-variation-settings: "wdth" 100;
