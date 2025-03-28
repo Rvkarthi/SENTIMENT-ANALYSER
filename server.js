@@ -15,7 +15,7 @@ function getMood(score) {
     if (score >= 5) return "Ecstatic 😆";
     if (score === 4) return "Excited 🤩";
     if (score === 3) return "Happy 😊";
-    if (score === 2) return "Happy 🙂";
+    if (score === 2) return "Pleasant 🙂";
     if (score === 1) return "Mildly Happy 😌";
     if (score === 0) return "Neutral 😐";
     if (score === -1) return "Unsettled 😕";

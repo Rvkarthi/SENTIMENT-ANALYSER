@@ -51,17 +51,26 @@
             }
 
             try {
-                let response = await fetch("https://sentiment-analyser-8iyf.onrender.com/analyze", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ text })
-                });
+    let response = await fetch("https://sentiment-analyser-8iyf.onrender.com/analyze", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text })
+    });
 
-                let data = await response.json();
-                document.getElementById("result").innerHTML = `Mood: ${data.mood}`;
-            } catch (error) {
-                document.getElementById("result").innerHTML = "Error analyzing mood!";
-            }
+    let data = await response.json();
+    let resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = ""; // Clear previous result
+    textvalue = data.mood
+    textvalue.forEach((item, index) => {
+        setTimeout(() => {
+            resultDiv.innerHTML += `${item} <br>`;
+        }, index * 2000); // Delay each mood display
+    });
+
+} catch (error) {
+    document.getElementById("result").innerHTML = "Error analyzing mood!";
+}
+
         }
     </script>
     <!-- bootstrap -->
